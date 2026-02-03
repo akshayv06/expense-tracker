@@ -4,7 +4,7 @@ A simple backend API for tracking expenses using Node.js, Express, MongoDB, and 
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 
 This project allows users to:
 
@@ -15,7 +15,7 @@ This project allows users to:
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 - Node.js
 - Express
@@ -25,7 +25,7 @@ This project allows users to:
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 .
 ├── controllers
@@ -51,7 +51,7 @@ This project allows users to:
 
 ---
 
-## ⚙️ Database
+## Database
 
 The project uses MongoDB to store:
 
@@ -83,9 +83,9 @@ Document example:
 
 ---
 
-## 📌 API Endpoints
+## API Endpoints
 
-1️⃣ Create User  
+1️ Create User  
 POST /users
 
 Body:
@@ -96,10 +96,10 @@ Body:
 }
 ```
 
-2️⃣ Get User by ID  
+2️ Get User by ID  
 GET /users/:id
 
-3️⃣ Add Expense  
+3️ Add Expense  
 POST /expenses
 
 Body:
@@ -112,16 +112,16 @@ Body:
 }
 ```
 
-4️⃣ Get User Expenses  
+4️ Get User Expenses  
 GET /users/:id/expenses  
 Supports optional query params: page, limit, category, startDate, endDate
 
-5️⃣ Get Monthly Summary  
+5️ Get Monthly Summary  
 GET /users/:id/summary
 
 ---
 
-## 🧪 Testing with Postman
+## Testing with Postman
 
 - Create a user → save userId
 - Add expense(s) using userId
@@ -130,7 +130,7 @@ GET /users/:id/summary
 
 ---
 
-## 🔧 Setup & Run Locally
+## Setup & Run Locally
 
 1. Install dependencies
 ```bash
@@ -139,7 +139,7 @@ npm install
 
 2. Create .env at project root:
 ```
-MONGO_URI=mongodb://localhost:27017/expense-tracker
+MONGO_URI=mongodb+srv://akshayv06:akshay02@cluster0.0oo0hlq.mongodb.net/?appName=Cluster0
 PORT=5000
 ```
 
@@ -151,7 +151,7 @@ Server will run on http://localhost:5000 (or PORT in .env)
 
 ---
 
-## 🧾 Git Commands (Push to GitHub)
+## Git Commands (Push to GitHub)
 ```bash
 git init
 git add .
